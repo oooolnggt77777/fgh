@@ -1,0 +1,147 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Обо мне | Тася</title>
+
+    <!-- Кастомная иконка сайта (favicon) в формате SVG -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👩‍💻</text></svg>">
+
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+        }
+
+        .cover {
+            background-image: url('https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            position: relative;
+        }
+
+            .cover::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: rgba(0, 0, 0, 0.5);
+            }
+
+        .cover-content {
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
+            padding: 20px;
+        }
+
+        .subtitle {
+            text-transform: uppercase;
+            font-size: 16px;
+            letter-spacing: 4px;
+            margin-bottom: 20px;
+            opacity: 0.9;
+        }
+
+        .title {
+            font-size: 2.8rem;
+            margin-bottom: 30px;
+            font-weight: 300;
+            line-height: 1.2;
+        }
+
+        .content-section {
+            max-width: 650px;
+            margin: 40px auto;
+            padding: 40px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 3px 20px rgba(0,0,0,0.05);
+        }
+
+        .divider {
+            width: 100px;
+            height: 3px;
+            background: linear-gradient(90deg, rgba(255,105,180,0.3), rgba(100,149,237,0.3));
+            margin: 50px auto;
+            border-radius: 3px;
+        }
+
+        .image-container {
+            text-align: center;
+            padding: 30px 0 50px;
+            background: white;
+        }
+
+            .image-container img {
+                max-width: 70%;
+                height: auto;
+                border-radius: 8px;
+                box-shadow: 0 5px 25px rgba(0,0,0,0.1);
+                transition: transform 0.3s ease;
+            }
+
+                .image-container img:hover {
+                    transform: scale(1.02);
+                }
+
+        @media (max-width: 768px) {
+            .title {
+                font-size: 2rem;
+            }
+
+            .content-section {
+                padding: 30px;
+                margin: 20px 15px;
+            }
+
+            .image-container img {
+                max-width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="cover">
+        <div class="cover-content">
+            <div class="subtitle">всем привет</div>
+            <h1 class="title">Немного обо мне</h1>
+        </div>
+    </div>
+
+    <div class="content-section">
+        <p>Меня зовут Тася, мне 15 лет, живу в г. Лангепасе. Пока пробую себя в разных направлениях и тп.</p>
+    </div>
+
+    <div class="content-section">
+        <p>Опыта с 3D моделированием и созданием сайтов пока нет, но очень хочу научиться! Надеюсь, эта смена тута поможет мне получить новые навыки и яркие впечатления))</p>
+    </div>
+
+    <div class="content-section">
+        <p>
+            меня идеально описывают репосты в тик токе, для меня это идеальный способ рассказать о себе ^^.<br><br>
+            Домашних животных у меня нет, люблю играть роблокс хехе. Раньше занималась спортом и ходила на разные кружки. Сейчас из основных увлечений это посидеть в тик  токе.<br><br>
+            в будущем планирую стать IT-специалистом, поэтому сейчас набираюсь опыта. конеец
+        </p>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="image-container">
+        <img src="https://i.imgur.com/9ySXa2s.png" alt="Мой аватар в Roblox">
+    </div>
+</body>
+</html>
